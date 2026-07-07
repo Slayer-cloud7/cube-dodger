@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops.pk.com | Gaming Laptops</title>
+    <style>
+        /* ===========================
+   GOOGLE FONTS
+=========================== */
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+        /* ===========================
+   RESET
+=========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            background: #050505;
+
+            color: #ffffff;
+
+            font-family: 'Poppins', sans-serif;
+
+            overflow-x: hidden;
+
+        }
+
+        /* ===========================
+   SCROLLBAR
+=========================== */
+
+        ::-webkit-scrollbar {
+
+            width: 10px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+
+            background: #111;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+
+            background: #ff0000;
+
+            border-radius: 20px;
+
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+
+            background: #ff2d2d;
+
+        }
+
+        /* ===========================
+   HERO SECTION
+=========================== */
+
+        .hero {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 100vh;
+
+            background: url("https://wallpaperaccess.com/full/279978.jpg") center center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: flex-start;
+
+            overflow: hidden;
+
+        }
+
+        /* Dark Overlay */
+
+        .overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(0, 0, 0, .95),
+                    rgba(0, 0, 0, .75),
+                    rgba(0, 0, 0, .45),
+                    rgba(0, 0, 0, .15));
+
+        }
+
+        /* Red Glow */
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+
+            height: 700px;
+
+            background: #ff0000;
+
+            filter: blur(220px);
+
+            opacity: .18;
+
+            right: -150px;
+
+            top: -120px;
+
+        }
+
+        /* ===========================
+   HERO CONTENT
+=========================== */
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-left: 90px;
+
+            max-width: 700px;
+
+        }
+
+        .hero-content h2 {
+
+            font-family: 'Orbitron', sans-serif;
+
+            color: #ff4444;
+
+            letter-spacing: 6px;
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .hero-content h1 {
+
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 72px;
+
+            line-height: 1.08;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            text-shadow:
+                0 0 10px red,
+                0 0 20px red,
+                0 0 40px #700;
+
+        }
+
+        .hero-content span {
+
+            color: #ff1d1d;
+
+        }
+
+        /* ===========================
+   BUTTON
+=========================== */
+
+        .btn {
+
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding: 18px 45px;
+
+            text-decoration: none;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            font-family: 'Orbitron', sans-serif;
+
+            letter-spacing: 2px;
+
+            border: 2px solid #ff0000;
+
+            border-radius: 50px;
+
+            transition: .35s;
+
+            box-shadow:
+                0 0 15px red;
+
+        }
+
+        .btn:hover {
+
+            background: #ff0000;
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 0 20px red,
+                0 0 45px red,
+                0 0 70px red;
+
+        }
+
+        /* ===========================
+   NAVIGATION
+=========================== */
+
+        nav {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 999;
+
+            width: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 45px;
+
+            background: #0b0b0b;
+
+            padding: 22px;
+
+            border-bottom: 2px solid #ff0000;
+
+            box-shadow:
+                0 8px 20px rgba(255, 0, 0, .15);
+
+        }
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+
+            font-family: 'Orbitron', sans-serif;
+
+            transition: .35s;
+
+            position: relative;
+
+        }
+
+        nav a::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            bottom: -8px;
+
+            width: 0;
+
+            height: 2px;
+
+            background: #ff0000;
+
+            transition: .35s;
+
+        }
+
+        nav a:hover {
+
+            color: #ff3b3b;
+
+            text-shadow: 0 0 12px red;
+
+        }
+
+        nav a:hover::after {
+
+            width: 100%;
+
+        }
+
+        nav .active {
+
+            color: #ff2d2d;
+
+        }
+
+        nav .active::after {
+
+            width: 100%;
+
+        }
+
+        /* ===========================
+   SECTION TITLE
+=========================== */
+
+        .title {
+
+            width: 100%;
+
+            padding: 90px 10%;
+
+            text-align: center;
+
+        }
+
+        .title h1 {
+
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 48px;
+
+            color: #ffffff;
+
+            text-transform: uppercase;
+
+            text-shadow:
+                0 0 10px red;
+
+            margin-bottom: 30px;
+
+        }
+
+        .line {
+
+            width: 180px;
+
+            height: 4px;
+
+            margin: 40px auto;
+
+            background: #ff0000;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 0 20px red;
+
+        }
+
+        /* ===========================
+   ABOUT SECTION
+=========================== */
+
+        .about {
+
+            width: 100%;
+
+            padding: 80px 10%;
+
+            text-align: center;
+
+            background: #090909;
+
+        }
+
+        .about h2 {
+
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 42px;
+
+            color: #ff2d2d;
+
+            margin-bottom: 35px;
+
+            text-shadow:
+                0 0 15px red;
+
+        }
+
+        .about p {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            font-size: 20px;
+
+            line-height: 2;
+
+            color: #d8d8d8;
+
+        }
+
+        /* ===========================
+   PRODUCT SECTION
+=========================== */
+
+        .products {
+
+            width: 100%;
+
+            padding: 90px 6%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(320px, 1fr));
+
+            gap: 40px;
+
+            background: #050505;
+
+        }
+
+        /* ===========================
+   PRODUCT CARD
+=========================== */
+
+        .card {
+
+            background: #111;
+
+            border: 2px solid #1b1b1b;
+
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            transition: .45s;
+
+            box-shadow:
+                0 0 15px rgba(255, 0, 0, .15);
+
+        }
+
+        .card:hover {
+
+            transform:
+                translateY(-12px) scale(1.03);
+
+            border-color: #ff0000;
+
+            box-shadow:
+                0 0 20px red,
+                0 0 50px rgba(255, 0, 0, .4);
+
+        }
+
+        .card img {
+
+            width: 100%;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: .5s;
+
+        }
+
+        .card:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+        /* ===========================
+   WHY US
+=========================== */
+
+        .features {
+
+            width: 100%;
+
+            padding: 100px 8%;
+
+            background: #090909;
+
+        }
+
+        .features h2 {
+
+            text-align: center;
+
+            font-size: 44px;
+
+            color: #ff2d2d;
+
+            margin-bottom: 60px;
+
+            font-family: 'Orbitron', sans-serif;
+
+            text-shadow:
+                0 0 15px red;
+
+        }
+
+        /* ===========================
+   FEATURE BOX
+=========================== */
+
+        .feature-box {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(420px, 1fr));
+
+            gap: 30px;
+
+        }
+
+        /* ===========================
+   FEATURE CARD
+=========================== */
+
+        .feature {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 25px;
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            background: #121212;
+
+            border: 2px solid #1f1f1f;
+
+            transition: .4s;
+
+        }
+
+        .feature:hover {
+
+            border-color: #ff0000;
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 0 18px red;
+
+        }
+
+        .feature i {
+
+            width: 70px;
+
+            height: 70px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            font-size: 28px;
+
+            color: white;
+
+            background: #ff0000;
+
+            box-shadow:
+                0 0 20px red;
+
+        }
+
+        .feature h3 {
+
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+
+            color: #ffffff;
+
+        }
+
+        .feature p {
+
+            color: #cccccc;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+
+        }
+
+        /* ===========================
+   SECTION DIVIDER
+=========================== */
+
+        section {
+
+            position: relative;
+
+        }
+
+        section::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 180px;
+
+            height: 3px;
+
+            background: #ff0000;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 0 15px red;
+
+        }
+
+        /* ===========================
+   FOOTER
+=========================== */
+
+        footer {
+
+            background: #080808;
+
+            padding: 60px 20px 30px;
+
+            text-align: center;
+
+            border-top: 2px solid #ff0000;
+
+        }
+
+        .social {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 22px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .social a {
+
+            width: 65px;
+
+            height: 65px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            text-decoration: none;
+
+            color: #ffffff;
+
+            font-size: 28px;
+
+            background: #111;
+
+            border: 2px solid #ff0000;
+
+            transition: .35s;
+
+            box-shadow: 0 0 12px rgba(255, 0, 0, .35);
+
+        }
+
+        .social a:hover {
+
+            background: #ff0000;
+
+            transform: translateY(-8px) scale(1.1);
+
+            box-shadow:
+                0 0 20px red,
+                0 0 45px red;
+
+        }
+
+        footer p {
+
+            color: #cfcfcf;
+
+            font-size: 16px;
+
+            letter-spacing: 1px;
+
+        }
+
+        /* ===========================
+   GLOWING BACKGROUND EFFECT
+=========================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            width: 450px;
+
+            height: 450px;
+
+            background: #ff0000;
+
+            left: -180px;
+
+            bottom: -180px;
+
+            opacity: .08;
+
+            filter: blur(170px);
+
+            pointer-events: none;
+
+        }
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 500px;
+
+            height: 500px;
+
+            background: #ff0000;
+
+            top: -220px;
+
+            right: -180px;
+
+            opacity: .08;
+
+            filter: blur(190px);
+
+            pointer-events: none;
+
+        }
+
+        /* ===========================
+   ANIMATIONS
+=========================== */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(40px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        .hero-content,
+        .title,
+        .about,
+        .products,
+        .features,
+        footer {
+
+            animation: fadeUp 1s ease;
+
+        }
+
+        /* ===========================
+   RESPONSIVE TABLET
+=========================== */
+
+        @media (max-width:992px) {
+
+            .hero {
+
+                justify-content: center;
+
+                text-align: center;
+
+            }
+
+            .hero-content {
+
+                margin: 0 30px;
+
+            }
+
+            .hero-content h1 {
+
+                font-size: 56px;
+
+            }
+
+            .hero-content h2 {
+
+                font-size: 24px;
+
+            }
+
+            .title h1 {
+
+                font-size: 36px;
+
+            }
+
+            .feature-box {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+        /* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+        @media (max-width:768px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 18px;
+
+            }
+
+            .hero {
+
+                height: 85vh;
+
+            }
+
+            .hero-content h1 {
+
+                font-size: 42px;
+
+            }
+
+            .hero-content h2 {
+
+                font-size: 20px;
+
+            }
+
+            .btn {
+
+                padding: 14px 28px;
+
+                font-size: 15px;
+
+            }
+
+            .title {
+
+                padding: 70px 8%;
+
+            }
+
+            .title h1 {
+
+                font-size: 30px;
+
+            }
+
+            .about h2 {
+
+                font-size: 32px;
+
+            }
+
+            .about p {
+
+                font-size: 17px;
+
+            }
+
+            .products {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .card img {
+
+                height: 230px;
+
+            }
+
+            .features h2 {
+
+                font-size: 34px;
+
+            }
+
+            .feature {
+
+                flex-direction: column;
+
+                align-items: center;
+
+                text-align: center;
+
+            }
+
+            .feature i {
+
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        /* ===========================
+   EXTRA SMALL DEVICES
+=========================== */
+
+        @media (max-width:480px) {
+
+            .hero-content h1 {
+
+                font-size: 34px;
+
+            }
+
+            .hero-content h2 {
+
+                font-size: 18px;
+
+                letter-spacing: 3px;
+
+            }
+
+            .title h1 {
+
+                font-size: 25px;
+
+            }
+
+            .social a {
+
+                width: 55px;
+
+                height: 55px;
+
+                font-size: 22px;
+
+            }
+
+            footer p {
+
+                font-size: 14px;
+
+            }
+
+        }
+    </style>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h2>FORGED FOR</h2>
+
+            <h1>
+                ULTIMATE <br>
+                DURABILITY, SPEED,<br>
+                AND PEAK <span>DESTROY</span>
+            </h1>
+
+            <a href="#products" class="btn">
+                THE GAMING ERA
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="About.html">
+            About Us
+        </a>
+
+    </nav>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="title">
+
+            <h1>
+                THE BIGGEST ONLINE WEBSITE
+                <br>
+                FOR PURCHASING LAPTOPS
+            </h1>
+
+            <div class="line"></div>
+
+            <h1>
+                YOU CAN FIND OLD AND
+                NEW LAPTOPS HERE
+            </h1>
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about">
+
+            <h2>
+                WHY YOU NEED LAPTOP?
+            </h2>
+
+            <p>
+
+                A laptop is an important device because it helps us study,
+                work, and communicate.
+
+                Students can use laptops to complete homework,
+                attend online classes,
+                research on the internet,
+                create documents,
+                watch educational videos,
+                learn programming,
+                play games,
+                and improve their skills.
+
+                A laptop is portable,
+                powerful,
+                and makes everyday work easier.
+
+            </p>
+
+        </section>
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products" id="products">
+
+            <div class="card">
+
+                <img src="https://electrogadgetplus.com/wp-content/uploads/2024/12/gaming-laptops.png">
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://avatars.mds.yandex.net/i?id=200033fa3afa31bdf9c72fd3bab219512f0187fe-7710221-images-thumbs&n=13">
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/06/asus-rog-strix-scar-17-deal.jpg">
+
+            </div>
+
+        </section>
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <h2>
+
+                WHY LAPTOPS.PK.COM
+                FOR LAPTOPS
+
+            </h2>
+
+            <div class="feature-box">
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+
+                        <h3>TESTED FOR PERFECTION</h3>
+
+                        <p>
+
+                            Every laptop is tested for speed,
+                            stability,
+                            gaming,
+                            and heavy multitasking.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-tags"></i>
+
+                    <div>
+
+                        <h3>DIRECT VALUE</h3>
+
+                        <p>
+
+                            Buy directly from our brand
+                            without paying dealer prices.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                    <div>
+
+                        <h3>BUILT FOR YOUR GOALS</h3>
+
+                        <p>
+
+                            Gaming,
+                            programming,
+                            editing,
+                            office,
+                            school,
+                            and university.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+
+                        <h3>LOCAL SUPPORT</h3>
+
+                        <p>
+
+                            Warranty,
+                            repairs,
+                            upgrades,
+                            and expert assistance.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <div>
+
+                        <h3>JOIN THE ELITE</h3>
+
+                        <p>
+
+                            Power your future with
+                            premium gaming hardware.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://facebook.com">
+
+                <i class="fab fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://instagram.com">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="https://youtube.com">
+
+                <i class="fab fa-youtube"></i>
+
+            </a>
+
+            <a href="https://twitter.com">
+
+                <i class="fab fa-x-twitter"></i>
+
+            </a>
+
+            <a href="https://tiktok.com">
+
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+
+        </div>
+
+        <p>
+
+            © 2026 Laptops.pk.com |
+            All Rights Reserved
+
+        </p>
+
+    </footer>
+
+  
+
+</body>
+
+</html>
