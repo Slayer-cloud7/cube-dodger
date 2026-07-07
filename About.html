@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gaming Laptops</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    line-height:1.8;
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    font-family:'Orbitron',sans-serif;
+    font-size:48px;
+    color:#ff2d2d;
+    margin:40px 0 20px;
+    text-shadow:0 0 18px red;
+}
+
+hr{
+    width:85%;
+    margin:20px auto;
+    border:none;
+    height:2px;
+    background:red;
+    box-shadow:0 0 10px red;
+}
+
+/* Navigation */
+
+nav{
+
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:20px;
+
+    background:#111;
+
+    border-bottom:2px solid red;
+
+    box-shadow:0 0 20px rgba(255,0,0,.25);
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-family:'Orbitron',sans-serif;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff3333;
+
+    text-shadow:0 0 12px red;
+
+}
+
+/* About Box */
+
+.content{
+
+    width:85%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    background:#141414;
+
+    border:2px solid red;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 0 25px rgba(255,0,0,.35);
+
+    transition:.4s;
+
+}
+
+.content:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 40px rgba(255,0,0,.6);
+
+}
+
+.content h2{
+
+    text-align:center;
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#ff4444;
+
+    margin-bottom:25px;
+
+}
+
+.content p{
+
+    color:#ddd;
+
+    font-size:20px;
+
+    text-align:justify;
+
+    line-height:2;
+
+}
+
+/* Background Glow */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:400px;
+    height:400px;
+
+    background:red;
+
+    left:-150px;
+    bottom:-150px;
+
+    filter:blur(170px);
+
+    opacity:.08;
+
+    pointer-events:none;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+    height:450px;
+
+    background:red;
+
+    right:-180px;
+    top:-180px;
+
+    filter:blur(190px);
+
+    opacity:.08;
+
+    pointer-events:none;
+
+}
+
+footer{
+
+    margin-top:60px;
+
+    padding:20px;
+
+    text-align:center;
+
+    background:#111;
+
+    border-top:2px solid red;
+
+    color:#ccc;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="https://www.facebook.com/konger.king.2025" target="_blank">My Facebook</a>
+    </nav>
+
+    <h1>About Us</h1>
+
+    <hr>
+
+    <div class="content">
+
+        <h2>Who We Are</h2>
+
+        <p>
+            Welcome to Flaming Gaming, where raw power meets legendary performance.
+            We engineered this brand for elite gamers who chase maximum FPS and
+            developers compiling massive codebases.
+
+            Every laptop in our collection is built to deliver outstanding
+            performance with advanced cooling systems designed to minimize thermal
+            throttling.
+
+            Our premium hardware is carefully tested for gaming, multitasking,
+            programming, and content creation.
+
+            We remove unnecessary middlemen and provide high-quality gaming laptops,
+            trusted warranties, and reliable local support.
+
+            Don't settle for ordinary hardware—upgrade your setup and unleash the
+            beast with Flaming Gaming.
+        </p>
+
+    </div>
+
+    <footer>
+
+        © 2026 Flaming Gaming | All Rights Reserved
+
+    </footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>/* ===========================
+   STAFF TABLE
+=========================== */
+
+.staff-table{
+
+    width:85%;
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    border-collapse:collapse;
+
+    background:#111;
+
+    border:2px solid #ff0000;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(255,0,0,.35);
+
+}
+
+/* Header */
+
+.staff-table thead{
+
+    background:#ff0000;
+
+}
+
+.staff-table th{
+
+    padding:20px;
+
+    color:white;
+
+    font-size:22px;
+
+    font-family:'Orbitron',sans-serif;
+
+    letter-spacing:1px;
+
+}
+
+/* Body */
+
+.staff-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:#dddddd;
+
+    border-top:1px solid #333;
+
+    transition:.35s;
+
+}
+
+/* Zebra Rows */
+
+.staff-table tbody tr:nth-child(even){
+
+    background:#181818;
+
+}
+
+/* Hover Effect */
+
+.staff-table tbody tr{
+
+    transition:.35s;
+
+}
+
+.staff-table tbody tr:hover{
+
+    background:#ff0000;
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 20px red;
+
+}
+
+.staff-table tbody tr:hover td{
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .staff-table{
+
+        width:95%;
+
+    }
+
+    .staff-table th,
+    .staff-table td{
+
+        padding:12px;
+
+        font-size:15px;
+
+    }
+
+}</style>
+    <table class="staff-table">
+
+    <thead>
+
+        <tr>
+
+            <th>Name</th>
+
+            <th>Role</th>
+
+            <th>Salary</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>Sheece</td>
+
+            <td>Web Builder / Developer</td>
+
+            <td>$3.4 Trillion</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Elon Musk</td>
+
+            <td>Sheece's PA</td>
+
+            <td>$1.2Trillion</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Mukesh Ambani</td>
+
+            <td>Office Boy</td>
+
+            <td>$100,000</td>
+
+
+        </tr>
+
+    </tbody>
+
+</table>
+</body>
+</html>
+</body>
+
+</html>
